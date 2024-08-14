@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header{
+    background-color:#bfac8b;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+    margin-right: 10px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color:black ;
+}
+header img{
+    width: 100px;
+    height: auto;
+}
+.sessão-01{
+    background-image:url(imagem/basketball-95607_1280.jpg) ;
+    padding: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sessão-01 button{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color:rgba(32, 31, 39, 0.353);
+}
+
+.sessão-02{
+    background-color: rgb(28, 25, 25);
+    display: flex;
+    padding: 250px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sessão-02 h2{
+    color: antiquewhite;
+    display: flex;
+    text-align: center;
+}
+.sessão-02 p{
+    color: white;
+    font-size: 17px;
+    font-weight: 20px;
+    text-align: left;
+  
+}
+.sessão-02 img{
+    width: 300px;
+    height: auto;
+}
+.sessão-03{
+    background-image: url(imagem/basketball-108622_1280.jpg);
+    background-attachment: fixed;
+    padding: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+}
+.sessão-03 h2{
+    color: #bfac8b;
+ 
+}
+.sessão-03 p{
+    color: #bfac8b;
+}
+
