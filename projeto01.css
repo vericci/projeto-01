@@ -39,24 +39,26 @@ header img{
     width: 150px;
     height: 40px;
     border-radius: 10px;
-    background-color:rgba(32, 31, 39, 0.353);
+    background-color:rgba(255, 98, 0, 0.809);
 }
 
 .sessão-02{
-    background-color: rgb(28, 25, 25);
+    background-color: rgb(254, 253, 253);
     display: flex;
     padding: 250px;
     align-items: center;
     justify-content: space-evenly;
 }
 .sessão-02 h2{
-    color: antiquewhite;
+    color: rgb(0, 0, 0);
     display: flex;
     text-align: center;
+    font-size: 20px;
+    font-weight: 20px;
 }
 .sessão-02 p{
-    color: white;
-    font-size: 17px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
     font-weight: 20px;
     text-align: left;
   
@@ -76,10 +78,31 @@ header img{
     justify-content: space-around;
 }
 .sessão-03 h2{
-    color: #bfac8b;
+    color: #e2e269;
  
 }
 .sessão-03 p{
-    color: #bfac8b;
+    color: #e2e269;
+    font-size: 20px;
+    font-weight: 20px;
+    align-items: center;
 }
 
+ footer{
+    background-color: black;
+    padding: 15px;
+    justify-content: space-evenly;
+    display: flex;
+ }
+ footer nav ul{
+    display: flex;
+ }
+ footer nav ul li{
+    list-style: none;
+    margin: 10px;
+ }
+
+ footer nav ul li a{
+    text-decoration: none;
+    color: white;
+ }
