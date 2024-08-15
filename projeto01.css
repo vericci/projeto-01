@@ -1,66 +1,73 @@
+/* usado para informar que existem itens que irão recair sobre o html */
 *{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    margin: 0; /*zerando a margin (top), bottom, right, left*/
+    padding: 0;/*zerando o preenchimento*/
+    list-style: none;/*removendo os estilos de listas */
 }
+/* chamamos nosso cabeçalho para estilização */
 header{
-    background-color:#bfac8b;
-    padding: 15px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    background-color:#bfac8b;/*habilitando uma corde fundo*/
+    padding: 15px;/*colocando um tamanho(preenchimento)*/
+    display: flex;/*tornamos noss header flex = deixamos itens lado alado*/
+    justify-content: space-around;/*justificativa do conteudo - aqui podemos ajustar conforme nossa necessidade*/
+    align-items: center;/*alinhamento na vertical, deixando habilitado ai centro*/
 }
+/* aqui chamamos nossa lista para estilização */
 header nav ul {
-    display: flex;
+    display: flex;/*tornamos nossa lista não ordenada em (flex)*/
 }
 header nav ul li{
-    list-style: none;
-    margin-right: 10px;
+    list-style: none;/*estilo de lista desabilitada*/
+    margin-right: 10px;/*espaçamento entre as (li)*/
 }
+/* aqui chamamos nossa ancora (a) para estiliização  */
 header nav ul li a{
-    text-decoration: none;
-    color:black ;
+    text-decoration: none;/*decoração de texto (sublinhado) desabilitado*/
+    color:black ;/*cor da letra*/
 }
+/* aqui chamamos nossa logo (img) para estilização*/
 header img{
-    width: 100px;
-    height: auto;
+    width: 100px;/*largura da imagem*/
+    height: auto;/*altura da imagem*/
 }
+/* aqui chamamos nossa primeira sessão */
 .sessão-01{
-    background-image:url(imagem/basketball-95607_1280.jpg) ;
-    padding: 250px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: space-around;
+    background-image:url(imagem/basketball-95607_1280.jpg) /*cor de fundo*/ ;
+    padding: 250px;/*preenchimento/tamanho da sesão*/
+    background-repeat: no-repeat;/*para imagem não se repita*/
+    background-size: cover;/*utilizada para que aimagem preencha todo espaço disponivel*/
+    background-position: center;/*posicionamento da imagem*/
+    display: flex;/*tornando a sessão flex*/
+    justify-content: space-around;/*justificando conteudo*/
 }
-
+/* chamando o botão da primeira sessão para estilizaçã*/
 .sessão-01 button{
-    width: 150px;
-    height: 40px;
-    border-radius: 10px;
-    background-color:rgba(255, 98, 0, 0.809);
+    width: 150px;;/*largura do botão*/
+    height: 40px;;/*altura do botão*/
+    border-radius: 10px;;/*cor de fundo*/
+    background-color:rgba(255, 98, 0, 0.809);;/*arredondamento da borda*/
 }
-
+/*aqui chamamos nossa segunda sessão para estilização*/
 .sessão-02{
-    background-color: rgb(254, 253, 253);
-    display: flex;
-    padding: 250px;
-    align-items: center;
-    justify-content: space-evenly;
+    background-color: rgb(254, 253, 253);;/*cor de fundo da sessão*/
+    display: flex;; /*tornando a sessão flex e deixando os itens lado lado*/
+    padding: 250px;;/*preenchimento/tamanho da sessão*/
+    align-items: center;;/*alinhamento dos itens na vertical - trazendo para o centro*/
+    justify-content: space-evenly;/*justifica do conteudo - usando o space-evenly como parametro*/
 }
+/* aqui estamos estilizando nosso sub titulo (H2) */
 .sessão-02 h2{
-    color: rgb(0, 0, 0);
-    display: flex;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 20px;
+    color: rgb(0, 0, 0);/*cor da letra*/
+    display: flex;/*tornando meu sub titulo flex*/
+    text-align: center;/*alinhamento do texto*/
+    font-size: 20px;/*tamanho da letra*/
+    font-weight: 20px;/*peso da letra*/
 }
 .sessão-02 p{
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    font-weight: 20px;
-    text-align: left;
+    color: rgb(0, 0, 0);/*cor da letra*/
+    font-size: 20px;/*tamanho da letra*/
+    font-weight: 20px;/*peso da letra*/
+    text-align: left;/*alinhamento do texto*/
   
 }
 .sessão-02 img{
@@ -68,7 +75,7 @@ header img{
     height: auto;
 }
 .sessão-03{
-    background-image: url(imagem/basketball-108622_1280.jpg);
+    background-image: url(imagem/action-1869428_1280.jpg);
     background-attachment: fixed;
     padding: 250px;
     background-repeat: no-repeat;
@@ -77,32 +84,36 @@ header img{
     display: flex;
     justify-content: space-around;
 }
+/* aqui estamos estilizando nosso sub titulo (H2) */
 .sessão-03 h2{
-    color: #e2e269;
+    color: black;/*cor da letra*/
  
 }
 .sessão-03 p{
-    color: #e2e269;
-    font-size: 20px;
-    font-weight: 20px;
-    align-items: center;
+    color: black;/*cor da letra */
+    font-size: 20px;/*tamanho da letra*/
+    font-weight: 20px;/*peso da letra*/
+    align-items: center;/**/
 }
 
+/*aqui habilitamos o rodape para estilização*/
  footer{
-    background-color: black;
-    padding: 15px;
-    justify-content: space-evenly;
-    display: flex;
+    background-color: black;/*cor de fundondo do rodape*/
+    padding: 15px;/*tamanho ´reesnchimento*/
+    justify-content: space-evenly;/*justificativa do conteudo ao centro*/
+    display: flex;/*tornando a sessão flex e deixando os itens lado a lado*/
  }
+ /* trazendo nossa lista não ordenada para estilização */
  footer nav ul{
-    display: flex;
+    display: flex;/*aqui tornamos lista um elemento fle, com isso as listas ficaram lado a lado*/
  }
+ /* aqui estamos trabalhando diretamente dentro das listas */
  footer nav ul li{
     list-style: none;
-    margin: 10px;
+    margin: 10px;/*atribuimos um espaçamento entre as listas, para que tenham uma melhor visualização*/
  }
-
+/* aqui estamos trabalhando dentro da ancora */
  footer nav ul li a{
-    text-decoration: none;
-    color: white;
+    text-decoration: none;/*decoração do texto*/ 
+    color: white;/*cora da letra*/
  }
