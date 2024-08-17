@@ -12,6 +12,10 @@ header{
     justify-content: space-around;/*justificativa do conteudo - aqui podemos ajustar conforme nossa necessidade*/
     align-items: center;/*alinhamento na vertical, deixando habilitado ai centro*/
 }
+/* altera cor do nosso botão de navegação */
+header nav ul li a:hover{
+    color:rgba(255, 98, 0, 0.809);/*alterar a cor da letra quando passamos o mouse*/
+}
 /* aqui chamamos nossa lista para estilização */
 header nav ul {
     display: flex;/*tornamos nossa lista não ordenada em (flex)*/
@@ -20,7 +24,7 @@ header nav ul li{
     list-style: none;/*estilo de lista desabilitada*/
     margin-right: 10px;/*espaçamento entre as (li)*/
 }
-/* aqui chamamos nossa ancora (a) para estiliização  */
+/* aqui chamamos nossa ancora (a) para estiliização*/
 header nav ul li a{
     text-decoration: none;/*decoração de texto (sublinhado) desabilitado*/
     color:black ;/*cor da letra*/
@@ -47,6 +51,14 @@ header img{
     border-radius: 10px;;/*cor de fundo*/
     background-color:rgba(255, 98, 0, 0.809);;/*arredondamento da borda*/
 }
+/* serve para alterar quando o mouse passa pela imagem ou botão etc. */
+.sessão-01 button:hover{
+    background-color: black;/*cor do botão*/
+    transition: 2s;/*tempo em que esse botão muda de cor*/
+    color: white;/*cor da letra*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/*altera a cor da letra quando passamos o mouse*/
+    cursor: pointer;/*altera o cursor do mouse*/
+}
 /*aqui chamamos nossa segunda sessão para estilização*/
 .sessão-02{
     background-color: rgb(254, 253, 253);;/*cor de fundo da sessão*/
@@ -71,19 +83,26 @@ header img{
   
 }
 .sessão-02 img{
-    width: 300px;
+    width: 250px;
     height: auto;
 }
-.sessão-03{
-    background-image: url(imagem/action-1869428_1280.jpg);
-    background-attachment: fixed;
-    padding: 250px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: space-around;
+.sessão-02 img:hover{
+    width: 280px;
+    transition: 2s;
+    cursor: pointer;
 }
+/*  */
+.sessão-03{
+    background-image: url(imagem/action-1869428_1280.jpg);/**/
+    background-attachment: fixed;/**/
+    padding: 250px;/**/
+    background-repeat: no-repeat;/**/
+    background-size: cover;/**/
+    background-position: center;/**/
+    display: flex;/**/
+    justify-content: space-around;/**/
+}
+
 /* aqui estamos estilizando nosso sub titulo (H2) */
 .sessão-03 h2{
     color: black;/*cor da letra*/
@@ -117,3 +136,6 @@ header img{
     text-decoration: none;/*decoração do texto*/ 
     color: white;/*cora da letra*/
  }
+footer nav ul li a:hover{
+    color: pink;
+}
