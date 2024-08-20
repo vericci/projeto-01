@@ -54,7 +54,7 @@ header img{
 /* serve para alterar quando o mouse passa pela imagem ou botão etc. */
 .sessão-01 button:hover{
     background-color: black;/*cor do botão*/
-    transition: 2s;/*tempo em que esse botão muda de cor*/
+    transition: 0.8s;/*tempo em que esse botão muda de cor*/
     color: white;/*cor da letra*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;/*altera a cor da letra quando passamos o mouse*/
     cursor: pointer;/*altera o cursor do mouse*/
@@ -138,4 +138,49 @@ header img{
  }
 footer nav ul li a:hover{
     color: pink;
+}
+/* estiliznado icone */
+header i{
+    color: blue;/*cores do icone*/
+    font-size: 150px;/*tamanho do icone*/
+    background-color: rgb(2, 2, 2);/*cor de fundo do icone*/
+    padding: 50px;/*respiro/ preenchimento da cor de fundo*/
+    border-radius:20px ;/*arredondamento da caixa */
+}
+/* aplicando o efeito ao passar o mouse */
+header i:hover{
+    background-color: white;/*cor de fundo alterada*/
+    transition: 0,7s;/*transição do elemento*/
+    color: black; /*cor ao passar mouse*/
+}
+
+/* Estilização tela-2 */
+.section-tela2{
+    background-image: url(imagem/the-ball-4129121_1280.jpg);
+    padding: 250px;
+    background-position: center;
+    background-repeat: no repeat;
+    background-size: cover;
+    font-family: ;
+}
+.section-tela2 p{
+    font-size: 30px;
+    color: black;
+    font-weight: 800;
+
+}
+.section-tela2 span{
+    color: rgb(255, 68, 0);
+    font-weight: bold;
+
+}
+.section-nova{
+    background-color: orangered;
+    padding: 500px;
+
+    
+}
+.section-atual{
+    background-color:red ;
+    padding: 500px;
 }
