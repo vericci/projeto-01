@@ -3,6 +3,7 @@
     margin: 0; /*zerando a margin (top), bottom, right, left*/
     padding: 0;/*zerando o preenchimento*/
     list-style: none;/*removendo os estilos de listas */
+    
 }
 /* chamamos nosso cabeçalho para estilização */
 header{
@@ -154,6 +155,19 @@ header i:hover{
     color: black; /*cor ao passar mouse*/
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Estilização tela-2 */
 .section-tela2{
     background-image: url(imagem/the-ball-4129121_1280.jpg);
@@ -165,7 +179,7 @@ header i:hover{
 }
 .section-tela2 p{
     font-size: 30px;
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: 800;
 
 }
@@ -175,12 +189,122 @@ header i:hover{
 
 }
 .section-nova{
-    background-color: orangered;
-    padding: 500px;
+    
+    padding: 250px;
+    background: linear-gradient(180deg, #ff3700 8.33%, #fbff00 100%);
 
     
 }
 .section-atual{
-    background-color:red ;
-    padding: 500px;
+    background-color:red ;/*preenchimento da sessão*/
+    padding: 500px;/*cor de fundo*/
+}
+
+
+/* div pai - Dentro dele existe 3 caixas */
+.div-pai{
+    display: flex; /*tornando os itens flex*/
+    justify-content: center;/*justicando os itens ao centro*/
+    margin-bottom: 20px;
+}
+/* estilização das caixas (div filho)  */
+.div-pai div{
+    background-color: yellow;
+    width: 200px;/*largura da caixa*/
+    height: 280px;/*altura da caixa*/
+    margin-right: 20px;/**/
+    border-radius: 15px;/**/
+}
+/*  */
+.div-pai .div-filho1{
+    background-image: url(imagem/jersey-5730732_1280.jpg);/**/
+    background-size: cover;/**/
+    background-position: center;/**/
+    background-repeat: no-repeat;/**/
+}
+/*  */
+.div-pai .div-filho1:hover{
+    width: 250px;/**/
+    right: 350px;/**/
+    transition: 0.8s;/**/
+}
+
+/*  */
+.div-pai .div-filho2{
+    background-image: url(imagem/Camiseta-NBA-Patches-Bege-Vintage.webp);/**/
+    background-size:cover;/**/
+    background-position: center;/**/
+    background-repeat: no-repeat;/**/
+}
+/*  */
+.div-pai .div-filho2:hover{
+    width:250px ;/**/
+    right: 350px;/**/
+    transition: 0.5s;/**/
+}
+
+/*  */
+.div-pai .div-filho3{
+    background-image: url(imagem/Camiseta-NBA-Outverse-Branca-Off.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.div-pai .div-filho3:hover{
+    width: 250px;
+    right: 350px;
+    transition: 0.5s;
+
+}
+
+
+.div-pai2 .div-filho01{
+    background-image:url(imagem/Brooklyn-Nets.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.div-pai2 .div-filho01:hover{
+    width: 250px;
+    right: 350px;
+    transition: 0.5s;
+}
+
+.div-pai2 .div-filho02{
+    background-image: url(imagem/camiseta_nba_los_angeles_lakers_especial_casual_efeito_5065_1_38989d06a46603751f917435b5f21b79_20230601173315.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.div-pai2 .div-filho02:hover{
+    width: 250px;
+    right: 350px;
+    transition: 0.5s;
+}
+.div-pai2 .div-filho03{
+    background-image: url(imagem/camisa_nba_los_angeles_clippers_nike_city_edition_22_23_swingman_jersey_paul_george_13_1825_1_3faf4431fd0533e4fc68dd13c0093805.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.div-pai2 .div-filho03:hover{
+    width: 250px;
+    right: 350px;
+    transition: 0.5s;
+}
+
+
+.div-pai2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+.div-pai2 div{
+    width: 200px;
+    height: 280px;
+    background-color: rgb(0, 38, 255);
+    margin-right: 20px;
+    border-radius: 15px;
+
 }
