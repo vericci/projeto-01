@@ -121,28 +121,33 @@ header img{
 
 /*aqui habilitamos o rodape para estilização*/
  footer{
-    background-color: black;/*cor de fundondo do rodape*/
+    background-color:black;/*cor de fundondo do rodape*/
     padding: 15px;/*tamanho ´reesnchimento*/
     justify-content: space-evenly;/*justificativa do conteudo ao centro*/
     display: flex;/*tornando a sessão flex e deixando os itens lado a lado*/
  }
- /* trazendo nossa lista não ordenada para estilização */
- footer nav ul{
-    display: flex;/*aqui tornamos lista um elemento fle, com isso as listas ficaram lado a lado*/
- }
- /* aqui estamos trabalhando diretamente dentro das listas */
- footer nav ul li{
-    list-style: none;
-    margin: 10px;/*atribuimos um espaçamento entre as listas, para que tenham uma melhor visualização*/
- }
-/* aqui estamos trabalhando dentro da ancora */
- footer nav ul li a{
-    text-decoration: none;/*decoração do texto*/ 
-    color: white;/*cora da letra*/
- }
-footer nav ul li a:hover{
-    color: pink;
+footer img{
+    width: 100px;
+    right: auto;
 }
+footer h2{
+    color: rgba(255, 98, 0, 0.809);
+}
+
+footer a i{
+    color:white;
+    padding: 7px;
+    font-size: 30px;
+    text-decoration: none;
+}
+footer a i:hover{
+    color: rgba(255, 98, 0, 0.809);
+    transition: 0.8s;
+}
+
+
+
+
 /* estiliznado icone */
 header i{
     color: blue;/*cores do icone*/
@@ -164,27 +169,43 @@ header i:hover{
 
 .rodapé{
     padding: 100px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    text-decoration: none;
 }
 
 
-.div-line img{
+.line img{
     width: 100px;
 }
 
-.div-line{
-    width:100px;
-    height: 1.6px;
-    background-color: aqua;
-    margin: 12px;
+
+.div-line a i{
+    text-decoration: none;
+    padding: 7px;
+    font-size: 40px;
+    color: white;
+    
 }
+
+.div-line h2{
+    color:rgba(255, 98, 0, 0.809);
+    font-size: 20px;
+}
+
+.div-line a i:hover{
+    color: rgba(255, 98, 0, 0.809);
+    transition: 0.8s;
+}
+
+
 
 
 html{
     scroll-behavior: smooth;
+    
 }
 
 
