@@ -170,10 +170,34 @@ header i:hover{
     align-items: center;
 }
 
+
 .div-line img{
-    width: 10px;
-    right: auto;
+    width: 100px;
 }
+
+.div-line{
+    width:100px;
+    height: 1.6px;
+    background-color: aqua;
+    margin: 12px;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
