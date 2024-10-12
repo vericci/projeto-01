@@ -1,146 +1,241 @@
 /* usado para informar que existem itens que irão recair sobre o html */
-*{
-    margin: 0; /*zerando a margin (top), bottom, right, left*/
-    padding: 0;/*zerando o preenchimento*/
-    list-style: none;/*removendo os estilos de listas */
-    
+* {
+    margin: 0;
+    /*zerando a margin (top), bottom, right, left*/
+    padding: 0;
+    /*zerando o preenchimento*/
+    list-style: none;
+    /*removendo os estilos de listas */
+    box-sizing: border-box;
+    font-family: lora, sans-serif;
 }
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
 /* chamamos nosso cabeçalho para estilização */
-header{
-    background-color:#bfac8b;/*habilitando uma corde fundo*/
-    padding: 15px;/*colocando um tamanho(preenchimento)*/
-    display: flex;/*tornamos noss header flex = deixamos itens lado alado*/
-    justify-content: space-around;/*justificativa do conteudo - aqui podemos ajustar conforme nossa necessidade*/
-    align-items: center;/*alinhamento na vertical, deixando habilitado ai centro*/
+header {
+    background-color: #bfac8b;
+    /*habilitando uma corde fundo*/
+    padding: min(1vh, 4rem);
+    /*colocando um tamanho(preenchimento)*/
+    width: 100%;
+    display: flex;
+    /*tornamos noss header flex = deixamos itens lado alado*/
+    justify-content: space-around;
+    /*justificativa do conteudo - aqui podemos ajustar conforme nossa necessidade*/
+    align-items: center;
+    /*alinhamento na vertical, deixando habilitado ai centro*/
+
 }
+
 /* altera cor do nosso botão de navegação */
-header nav ul li a:hover{
-    color:rgba(255, 98, 0, 0.809);/*alterar a cor da letra quando passamos o mouse*/
+header nav ul li a:hover {
+    color: rgba(255, 98, 0, 0.809);
+    /*alterar a cor da letra quando passamos o mouse*/
 }
+
 /* aqui chamamos nossa lista para estilização */
 header nav ul {
-    display: flex;/*tornamos nossa lista não ordenada em (flex)*/
+    display: flex;
+    /*tornamos nossa lista não ordenada em (flex)*/
 }
-header nav ul li{
-    list-style: none;/*estilo de lista desabilitada*/
-    margin-right: 10px;/*espaçamento entre as (li)*/
+
+header nav ul li {
+    list-style: none;
+    /*estilo de lista desabilitada*/
+    margin-right: 10px;
+    /*espaçamento entre as (li)*/
 }
+
 /* aqui chamamos nossa ancora (a) para estiliização*/
-header nav ul li a{
-    text-decoration: none;/*decoração de texto (sublinhado) desabilitado*/
-    color:black ;/*cor da letra*/
+header nav ul li a {
+    text-decoration: none;
+    /*decoração de texto (sublinhado) desabilitado*/
+    color: black;
+    /*cor da letra*/
+    margin: 1rem;
 }
+
 /* aqui chamamos nossa logo (img) para estilização*/
-header img{
-    width: 100px;/*largura da imagem*/
-    height: auto;/*altura da imagem*/
+header img {
+    width: 6rem;
+    /*largura da imagem*/
+    height: auto;
+    /*altura da imagem*/
 }
+
 /* aqui chamamos nossa primeira sessão */
-.sessão-01{
-    background-image:url(imagem/basketball-95607_1280.jpg) /*cor de fundo*/ ;
-    padding: 250px;/*preenchimento/tamanho da sesão*/
-    background-repeat: no-repeat;/*para imagem não se repita*/
-    background-size: cover;/*utilizada para que aimagem preencha todo espaço disponivel*/
-    background-position: center;/*posicionamento da imagem*/
-    display: flex;/*tornando a sessão flex*/
-    justify-content: space-around;/*justificando conteudo*/
+.sessão-01 {
+    background-image: url(imagem/basketball-95607_1280.jpg)
+        /*cor de fundo*/
+    ;
+    padding: 15rem;
+    /*preenchimento/tamanho da sesão*/
+    background-repeat: no-repeat;
+    /*para imagem não se repita*/
+    background-size: cover;
+    /*utilizada para que aimagem preencha todo espaço disponivel*/
+    background-position: center;
+    /*posicionamento da imagem*/
+    display: flex;
+    /*tornando a sessão flex*/
+    justify-content: space-around;
+    /*justificando conteudo*/
 }
+
 /* chamando o botão da primeira sessão para estilizaçã*/
-.sessão-01 button{
-    width: 150px;;/*largura do botão*/
-    height: 40px;;/*altura do botão*/
-    border-radius: 10px;;/*cor de fundo*/
-    background-color:rgba(255, 98, 0, 0.809);;/*arredondamento da borda*/
+.sessão-01 button {
+    width: 9.3rem;
+    /*largura do botão*/
+    height: 2.5rem;
+    ;
+    /*altura do botão*/
+    border-radius: 0.5rem;
+    /*cor de fundo*/
+    background-color: rgba(255, 98, 0, 0.809);
+    ;
+    /*arredondamento da borda*/
 }
+
 /* serve para alterar quando o mouse passa pela imagem ou botão etc. */
-.sessão-01 button:hover{
-    background-color: black;/*cor do botão*/
-    transition: 0.8s;/*tempo em que esse botão muda de cor*/
-    color: white;/*cor da letra*/
-    font-family: Verdana, Geneva, Tahoma, sans-serif;/*altera a cor da letra quando passamos o mouse*/
-    cursor: pointer;/*altera o cursor do mouse*/
+.sessão-01 button:hover {
+    background-color: black;
+    /*cor do botão*/
+    transition: 0.8s;
+    /*tempo em que esse botão muda de cor*/
+    color: white;
+    /*cor da letra*/
+    /*altera a cor da letra quando passamos o mouse*/
+    cursor: pointer;
+    /*altera o cursor do mouse*/
 }
+
 /*aqui chamamos nossa segunda sessão para estilização*/
-.sessão-02{
-    background-color: rgb(254, 253, 253);;/*cor de fundo da sessão*/
-    display: flex;; /*tornando a sessão flex e deixando os itens lado lado*/
-    padding: 250px;;/*preenchimento/tamanho da sessão*/
-    align-items: center;;/*alinhamento dos itens na vertical - trazendo para o centro*/
-    justify-content: space-evenly;/*justifica do conteudo - usando o space-evenly como parametro*/
+.sessão-02 {
+    background-color: rgb(254, 253, 253);
+    ;
+    /*cor de fundo da sessão*/
+    display: flex;
+    ;
+    /*tornando a sessão flex e deixando os itens lado lado*/
+    padding: 15rem;
+    ;
+    /*preenchimento/tamanho da sessão*/
+    align-items: center;
+    ;
+    /*alinhamento dos itens na vertical - trazendo para o centro*/
+    justify-content: space-evenly;
+    /*justifica do conteudo - usando o space-evenly como parametro*/
 }
+
 /* aqui estamos estilizando nosso sub titulo (H2) */
-.sessão-02 h2{
-    color: rgb(0, 0, 0);/*cor da letra*/
-    display: flex;/*tornando meu sub titulo flex*/
-    text-align: center;/*alinhamento do texto*/
-    font-size: 30px;/*tamanho da letra*/
-    font-weight: 30px;/*peso da letra*/
+.sessão-02 h2 {
+    color: rgb(0, 0, 0);
+    /*cor da letra*/
+    display: flex;
+    /*tornando meu sub titulo flex*/
+    text-align: center;
+    /*alinhamento do texto*/
+    font-size: 2rem;
+    /*tamanho da letra*/
+    font-weight: 400;
+    /*peso da letra*/
 }
+
 /* titulo da sessão 2 */
-.sessão-02 p{
-    color: rgb(0, 0, 0);/*cor da letra*/
-    font-size: 20px;/*tamanho da letra*/
-    font-weight: 20px;/*peso da letra*/
-    text-align: left;/*alinhamento do texto*/
+.sessão-02 p {
+    color: rgb(0, 0, 0);
+    /*cor da letra*/
+    font-size: 1.5rem;
+    /*tamanho da letra*/
+    font-weight: 400;
+    /*peso da letra*/
+    text-align: left;
+    /*alinhamento do texto*/
 }
 
 
-.sessão-02 img{
-    width: 250px;
+.sessão-02 img {
+    width: 15rem;
     height: auto;
 }
 
-.sessão-02 img:hover{
-    width: 280px;
+.sessão-02 img:hover {
+    width: 17.5rem;
     transition: 2s;
     cursor: pointer;
 }
+
 /*  */
-.sessão-03{
-    background-image: url(imagem/action-1869428_1280.jpg);/**/
-    background-attachment: fixed;/**/
-    padding: 250px;/**/
-    background-repeat: no-repeat;/**/
-    background-size: cover;/**/
-    background-position: center;/**/
-    display: flex;/**/
-    justify-content: space-around;/**/
+.sessão-03 {
+    background-image: url(imagem/action-1869428_1280.jpg);
+    /**/
+    background-attachment: fixed;
+    /**/
+    padding: 15.6rem;
+    /**/
+    background-repeat: no-repeat;
+    /**/
+    background-size: cover;
+    /**/
+    background-position: center;
+    /**/
+    display: flex;
+    /**/
+    justify-content: space-around;
+    /**/
 }
 
 /* aqui estamos estilizando nosso sub titulo (H2) */
-.sessão-03 h2{
-    color: black;/*cor da letra*/
- 
+.sessão-03 h2 {
+    color: black;
+    /*cor da letra*/
+
 }
-.sessão-03 p{
-    color: black;/*cor da letra */
-    font-size: 20px;/*tamanho da letra*/
-    font-weight: 20px;/*peso da letra*/
-    align-items: center;/**/
+
+.sessão-03 p {
+    color: black;
+    /*cor da letra */
+    font-size: 1.2rem;
+    /*tamanho da letra*/
+    font-weight: 300;
+    /*peso da letra*/
+    align-items: center;
+    /**/
 }
 
 /*aqui habilitamos o rodape para estilização*/
- footer{
-    background-color:black;/*cor de fundondo do rodape*/
-    padding: 15px;/*tamanho ´reesnchimento*/
-    justify-content: space-evenly;/*justificativa do conteudo ao centro*/
-    display: flex;/*tornando a sessão flex e deixando os itens lado a lado*/
- }
-footer img{
-    width: 100px;
+footer {
+    background-color: black;
+    /*cor de fundondo do rodape*/
+    padding: 0.9rem;
+    /*tamanho ´reesnchimento*/
+    justify-content: space-evenly;
+    /*justificativa do conteudo ao centro*/
+    display: flex;
+    /*tornando a sessão flex e deixando os itens lado a lado*/
+}
+
+footer img {
+    width: 6rem;
     right: auto;
 }
-footer h2{
+
+footer h2 {
     color: rgba(255, 98, 0, 0.809);
 }
 
-footer a i{
-    color:white;
+footer a i {
+    color: white;
     padding: 7px;
     font-size: 30px;
     text-decoration: none;
 }
-footer a i:hover{
+
+footer a i:hover {
     color: rgba(255, 98, 0, 0.809);
     transition: 0.8s;
 }
@@ -148,27 +243,48 @@ footer a i:hover{
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* estiliznado icone */
-header i{
-    color: blue;/*cores do icone*/
-    font-size: 150px;/*tamanho do icone*/
-    background-color: rgb(2, 2, 2);/*cor de fundo do icone*/
-    padding: 50px;/*respiro/ preenchimento da cor de fundo*/
-    border-radius:20px ;/*arredondamento da caixa */
+header i {
+    color: black;
+    /*cores do icone*/
+    font-size: 3rem;
+    /*tamanho do icone*/
+    
+    /*cor de fundo do icone*/
+    padding: 3rem;
+    /*respiro/ preenchimento da cor de fundo*/
+    border-radius: 1.2rem;
+    /*arredondamento da caixa */
+    
+    
 }
+
 /* aplicando o efeito ao passar o mouse */
-header i:hover{
-    background-color: white;/*cor de fundo alterada*/
-    transition: 0,7s;/*transição do elemento*/
-    color: black; /*cor ao passar mouse*/
+header i:hover {
+   
+    /*cor de fundo alterada*/
+    transition: 0, 7s;
+    /*transição do elemento*/
+    color: gray;
+    /*cor ao passar mouse*/
 }
 
 
 
 
 
-.rodapé{
-    padding: 100px;
+.rodapé {
+    padding: 6.2rem;
     background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-evenly;
@@ -177,54 +293,75 @@ header i:hover{
 }
 
 
-.line img{
-    width: 100px;
+.line img {
+    width: 6.2rem;
 }
 
 
-.div-line a i{
+.div-line a i {
     text-decoration: none;
     padding: 7px;
     font-size: 40px;
     color: white;
-    
+
 }
 
-.div-line h2{
-    color:rgba(255, 98, 0, 0.809);
+.div-line h2 {
+    color: rgba(255, 98, 0, 0.809);
     font-size: 20px;
 }
 
-.div-line a i:hover{
+.div-line a i:hover {
     color: rgba(255, 98, 0, 0.809);
     transition: 0.8s;
 }
-.mobile-menu { /*Estilização da caixa Mobile quando aberta*/
-    display: none; /*Display: Nenhum*/
-    position: fixed; /*Posição fixa na parte direita da página*/
-    top: 0; /*Superior em 0 fazendo a caixa encostar ao topo*/
-    right: 0; /*Direita em 0 fazendo a caixa encostar a direita*/
-    width: 60%; /*Largura em porcentagem da caixa*/
-    height: 100%; /*Altura de 100% da tela*/
-    background-color: rgb(0, 0, 0); /*Cor de fundo*/
-    flex-direction: column; /*direção dos itens dentro da caixa */
-    align-items: center; /*Alinhamento na vertical do itens*/
-    font-size: 1.8rem; /*tamanho da letra dentro da caixa*/
+
+.mobile-menu {
+    /*Estilização da caixa Mobile quando aberta*/
+    display: none;
+    /*Display: Nenhum*/
+    position: fixed;
+    /*Posição fixa na parte direita da página*/
+    top: 0;
+    /*Superior em 0 fazendo a caixa encostar ao topo*/
+    right: 0;
+    /*Direita em 0 fazendo a caixa encostar a direita*/
+    width: 50%;
+    /*Largura em porcentagem da caixa*/
+    height: 100%;
+    /*Altura de 100% da tela*/
+    background-color: rgb(0, 0, 0);
+    /*Cor de fundo*/
+    flex-direction: column;
+    /*direção dos itens dentro da caixa */
+    align-items: center;
+    /*Alinhamento na vertical do itens*/
+    font-size: 1.8rem;
+    /*tamanho da letra dentro da caixa*/
 }
 
-.nav-links-mobile { /*Lista não ordenada da versão mobile*/
-    display: flex; /*Tornando os itens (LISTAS) flexíveis*/
-    flex-direction: column; /*Estamos direcionando o posicionamento dessas listas*/
-    text-align: end; /*Alinhando o texto ao centro*/
-    gap: 1.2rem; /*Espaço entre as listas */
+.nav-links-mobile {
+    /*Lista não ordenada da versão mobile*/
+    display: flex;
+    /*Tornando os itens (LISTAS) flexíveis*/
+    flex-direction: column;
+    /*Estamos direcionando o posicionamento dessas listas*/
+    text-align: end;
+    /*Alinhando o texto ao centro*/
+    gap: 1.2rem;
+    /*Espaço entre as listas */
     /* width: 0%; Zeramos a largura podendo retirar essa linha para testar visualizão */
-    list-style: none; /*Estilo de lista desabilitado*/
+    list-style: none;
+    /*Estilo de lista desabilitado*/
     /* padding: 0; Preenchimento zerado, podendo também ser retirado para testes */
 }
 
-.nav-links-mobile li { /*listas da versão Mobile*/
-    border-bottom: 1px solid #787272; /*Bordar inferior de cada lista*/
-    padding-bottom: 1.2rem; /*Tamanho da borda*/
+.nav-links-mobile li {
+    /*listas da versão Mobile*/
+    border-bottom: 1px solid black;
+    /*Bordar inferior de cada lista*/
+    padding-bottom: 1.2rem;
+    /*Tamanho da borda*/
 }
 
 
@@ -255,9 +392,9 @@ header i:hover{
 
 
 
-html{
+html {
     scroll-behavior: smooth;
-    
+
 }
 
 
@@ -286,7 +423,7 @@ html{
 
 
 /* Estilização tela-2 */
-.section-tela2{
+.section-tela2 {
     background-image: url(imagem/the-ball-4129121_1280.jpg);
     padding: 250px;
     background-position: center;
@@ -294,82 +431,112 @@ html{
     background-size: cover;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.section-tela2 p{
+
+.section-tela2 p {
     font-size: 30px;
     color: rgb(0, 0, 0);
     font-weight: 800;
 
 }
-.section-tela2 span{
+
+.section-tela2 span {
     color: rgb(255, 68, 0);
     font-weight: bold;
 
 }
-.section-nova{
+
+.section-nova {
 
     padding: 250px;
     background: linear-gradient(180deg, black 8.33%, white 100%);
 }
 
 
-.section-atual{
-    background-color:rgb(78, 91, 95) ;/*preenchimento da sessão*/
-    padding: 200px;/*cor de fundo*/
+.section-atual {
+    background-color: rgb(78, 91, 95);
+    /*preenchimento da sessão*/
+    padding: 200px;
+    /*cor de fundo*/
     display: flex;
     justify-content: space-evenly;
 
 }
+
 /* div pai - Dentro dele existe 3 caixas */
-.div-pai{
-    display: flex; /*tornando os itens flex*/
-    justify-content: center;/*justicando os itens ao centro*/
+.div-pai {
+    display: flex;
+    /*tornando os itens flex*/
+    justify-content: center;
+    /*justicando os itens ao centro*/
     margin-bottom: 20px;
 }
+
 /* estilização das caixas (div filho)  */
-.div-pai div{
+.div-pai div {
     background-color: yellow;
-    width: 200px;/*largura da caixa*/
-    height: 280px;/*altura da caixa*/
-    margin-right: 20px;/**/
-    border-radius: 15px;/**/
-}
-/*  */
-.div-pai .div-filho1{
-    background-image: url(imagem/jersey-5730732_1280.jpg);/**/
-    background-size: cover;/**/
-    background-position: center;/**/
-    background-repeat: no-repeat;/**/
-}
-/*  */
-.div-pai .div-filho1:hover{
-    width: 250px;/**/
-    right: 350px;/**/
-    transition: 0.8s;/**/
+    width: 200px;
+    /*largura da caixa*/
+    height: 280px;
+    /*altura da caixa*/
+    margin-right: 20px;
+    /**/
+    border-radius: 15px;
+    /**/
 }
 
 /*  */
-.div-pai .div-filho2{
-    background-image: url(imagem/Camiseta-NBA-Patches-Bege-Vintage.webp);/**/
-    background-size:cover;/**/
-    background-position: center;/**/
-    background-repeat: no-repeat;/**/
-}
-/*  */
-.div-pai .div-filho2:hover{
-    width:250px ;/**/
-    right: 350px;/**/
-    transition: 0.5s;/**/
+.div-pai .div-filho1 {
+    background-image: url(imagem/jersey-5730732_1280.jpg);
+    /**/
+    background-size: cover;
+    /**/
+    background-position: center;
+    /**/
+    background-repeat: no-repeat;
+    /**/
 }
 
 /*  */
-.div-pai .div-filho3{
+.div-pai .div-filho1:hover {
+    width: 250px;
+    /**/
+    right: 350px;
+    /**/
+    transition: 0.8s;
+    /**/
+}
+
+/*  */
+.div-pai .div-filho2 {
+    background-image: url(imagem/Camiseta-NBA-Patches-Bege-Vintage.webp);
+    /**/
+    background-size: cover;
+    /**/
+    background-position: center;
+    /**/
+    background-repeat: no-repeat;
+    /**/
+}
+
+/*  */
+.div-pai .div-filho2:hover {
+    width: 250px;
+    /**/
+    right: 350px;
+    /**/
+    transition: 0.5s;
+    /**/
+}
+
+/*  */
+.div-pai .div-filho3 {
     background-image: url(imagem/Camiseta-NBA-Outverse-Branca-Off.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.div-pai .div-filho3:hover{
+.div-pai .div-filho3:hover {
     width: 250px;
     right: 350px;
     transition: 0.5s;
@@ -377,50 +544,54 @@ html{
 }
 
 
-.div-pai2 .div-filho01{
-    background-image:url(imagem/Brooklyn-Nets.jpg);
+.div-pai2 .div-filho01 {
+    background-image: url(imagem/Brooklyn-Nets.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.div-pai2 .div-filho01:hover{
+.div-pai2 .div-filho01:hover {
     width: 250px;
     right: 350px;
     transition: 0.5s;
 }
 
-.div-pai2 .div-filho02{
+.div-pai2 .div-filho02 {
     background-image: url(imagem/camiseta_nba_los_angeles_lakers_especial_casual_efeito_5065_1_38989d06a46603751f917435b5f21b79_20230601173315.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.div-pai2 .div-filho02:hover{
+
+.div-pai2 .div-filho02:hover {
     width: 250px;
     right: 350px;
     transition: 0.5s;
 }
-.div-pai2 .div-filho03{
+
+.div-pai2 .div-filho03 {
     background-image: url(imagem/camisa_nba_los_angeles_clippers_nike_city_edition_22_23_swingman_jersey_paul_george_13_1825_1_3faf4431fd0533e4fc68dd13c0093805.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.div-pai2 .div-filho03:hover{
+
+.div-pai2 .div-filho03:hover {
     width: 250px;
     right: 350px;
     transition: 0.5s;
 }
 
 
-.div-pai2{
+.div-pai2 {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    
+
 }
-.div-pai2 div{
+
+.div-pai2 div {
     width: 200px;
     height: 280px;
     background-color: rgb(0, 38, 255);
@@ -429,169 +600,30 @@ html{
 
 }
 
-.div-titulo h2{
-    color:black;
+.div-titulo h2 {
+    color: black;
     margin: 30px;
     font-size: 30px;
-   
-    
-   
+
+
+
 }
-.div-titulo p{
+
+.div-titulo p {
     color: black;
     margin: 20px;
     font-size: 20px;
     font-weight: 400px;
 }
-.div-iframe iframe{
+
+.div-iframe iframe {
     border-radius: 10px;
     margin-top: 30px;
 }
 
-@media(max-width: 410px){ 
-    #menu-header {
-        display: none;
-    }
-  
-    /* #btn-header button a {
-        display: block;
-        font-family: bold;
-    }
-
-    #btn-header button a p {
-        font-size: 0.8em;
-        font-family: Arial, Helvetica, sans-serif;
-    }
 
 
-    #btn-header button a img {
-    width: 30%;
-    color: aliceblue;
-    height: auto;
-    } */
-
-
-    header img {
-    width: 30px;
-    height: 40px;
-    }
-
-    header h1 {
-        font-size: 1em;
-    }
-    
-
-    header {
-     padding: 5%;   
-    }
-    
-
-    #clients-list {
-        display: block;
-    }
-
-
-
-    #clients .img-femi {
-        width: 18%;
-        height: auto;
-    }
-
-    #clients h2 {
-        font-size: 1.5em;
-        margin-top: 10%;
-    }
-
-    
-     .clients-item p {
-        font-size: 15px;
-        margin-bottom: 10%;
-    }
-
-    .clients-item h3 {
-        font-size: 20px;
-    }
-
-
-
-
-    .clients-item > img {
-         width: 80px;
-         height: auto;
-    }
-    .products {
-        display: block;
-        align-items: center;
-       
-    }
-
-
-    .img-product {
-        margin-left: 16px;
-    }
-
-    #featured-products > a {
-        margin-top: 20px;
-    } 
-
-
-
-    #sobre-nos {
-        flex-direction: column;
-    }
-
-
-    #sobre-nos h3 {
-        font-size: 1.6em;
-    }
-
-    #sobre-nos p {
-        font: bold;
-        font-size: 1.2em;
-    }
-
-
-
-    #img-destaque {
-        width: 100%;
-    }
-
-    .img-padaria {
-        max-width: 100%;
-        height: auto;
-        background-position: top;
-    } 
-
-
-
-
-    .contatos {
-        display: block;
-    }
-
-    .img-product {
-        margin-top: 80px;
-    }
-    
-    footer {
-        color: #000000;
-    }
-
-    footer > h2 {
-       font-size: 26px;
-    }
-
-    .item-menu-footer > p {
-        font-size: 20px;
-        
-    }
-
-} 
-
-
-@media (max-width: 700px) {
-
-}
+@media(max-width: 410px){}
 
 
 
@@ -600,20 +632,19 @@ html{
     html {
         font-size: 12px;
     }
-
-    /* header img {
-        width: 10rem;
-        height: auto;
-        } */
-
-
-        header img {
-            width: 4em;
-            height: auto;
-            }
-    .nav-links {
-        display: none;
+    .nav-links-mobile a {
+        color: white;
     }
+    .closeButton i {
+        color: white;
+        
+    }
+
+    header img {
+        width: 7rem;
+        height: auto;
+    }
+  
 
     .hamburger {
         display: block;
@@ -630,18 +661,22 @@ html{
 
 
     .cad-mobile button {
-        width: 14rem;
+        width: 10rem;
         height: 4rem;
         border-radius: 5px;
-        background-color: #f8f4f46c;
-        color: #000000;
+        background-color: white;
+        color: black;
     }
 
 
 
     .cad-mobile button a {
         text-decoration: none;
-        color: white;
+        color: black;
 
+    } 
+    .nav {
+        display: none;
     }
+    
 }
