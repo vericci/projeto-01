@@ -24,7 +24,7 @@ header {
     width: 100%;
     display: flex;
     /*tornamos noss header flex = deixamos itens lado alado*/
-    justify-content: space-around;
+    justify-content: space-between;
     /*justificativa do conteudo - aqui podemos ajustar conforme nossa necessidade*/
     align-items: center;
     /*alinhamento na vertical, deixando habilitado ai centro*/
